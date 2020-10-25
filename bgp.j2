@@ -1,0 +1,7 @@
+router bgp {{ asn }}
+ bgp router-id {{ GigabitEthernet1 }}
+ neighbor {{ neighbor_addr }} remote-as {{ neighbor_asn }}
+ address-family ipv4 unicast
+{% for n in networks %}
+  network {{ n.net }} mask {{ n.mask }}
+{% endfor %}

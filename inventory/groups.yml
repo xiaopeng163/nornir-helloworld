@@ -1,0 +1,4 @@
+csr1000v:
+  platform: ios
+  username: cisco
+  password: C1sc0!23
